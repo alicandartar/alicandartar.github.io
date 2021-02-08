@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+
 <html>
 	<head>
 		<title>Alican Dartar</title>
@@ -8,34 +9,42 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Alican Dartar</h1>
-						<p>QA Automation Engineer</p>
-						<nav>
-							<ul>
-								<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
-								<li><a href="https://www.linkedin.com/in/alican-dartar-7982a4108/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-								<!--<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
-								<li><a href="https://github.com/alicandartar" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Alican Dartar</h1>
+							<p>QA Engineer</p>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a href="https://twitter.com/alicandartar" class="icon brands fa-twitter">Twitter</a></li>
+								<li><a href="https://www.linkedin.com/in/alican-dartar-7982a4108/" class="icon brands fa-linkedin">Linkedin</a></li>
+								<li><a href="https://github.com/alicandartar" class="icon brands fa-github">Github</a></li>
 							</ul>
-						</nav>
-					</header>
+						</footer>
+					</section>
 
-				
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<!--<li>&copy; Alican Dartar</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+						</ul>
+					</footer>
 
 			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
 	</body>
 </html>
